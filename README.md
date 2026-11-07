@@ -36,6 +36,11 @@ client.chat.completions.create(
 )
 ```
 
+**Get a key:** create an account at
+[cognocient.com](https://www.cognocient.com/?utm_source=pypi&utm_medium=readme)
+(free plan, no credit card; or a 10-day trial of every feature). The in-app
+setup creates your `sk-cog-...` key.
+
 Every method the real SDK exposes still works unchanged. This wrapper only
 intercepts `chat.completions.create()` (`messages.create()` for Anthropic)
 to time the call and report its usage after the fact; everything else is
